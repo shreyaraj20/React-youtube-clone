@@ -4,7 +4,7 @@ import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetails";
 import youtube from "./api/Youtube";
-
+import "./styles.css";
 class App extends Component {
   state = {
     videos: [],
@@ -43,6 +43,7 @@ class App extends Component {
         spacing={10}
         style={{ backgroundColor: "black" }}
       >
+        <h1>Youtube Clone App</h1>
         <Grid item xs={12}>
           <Grid container spacing={10}>
             <Grid item xs={12}>

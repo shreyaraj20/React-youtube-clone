@@ -8,7 +8,10 @@ const VideoDetails = ({ video }) => {
 
   return (
     <React.Fragment>
-      <Paper elevation={6} style={{ height: "30%" }}>
+      <Paper
+        elevation={6}
+        style={{ height: "25%", margin: "10px", width: "700px" }}
+      >
         <iframe
           frameBorder="0"
           height="100%"

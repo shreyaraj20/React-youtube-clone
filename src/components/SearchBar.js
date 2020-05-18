@@ -7,11 +7,10 @@ class SearchBar extends Component {
   };
 
   handleChange = event => this.setState({ searchTerm: event.target.value });
-  handleSubmit = event => {
+  handleSubmit = e => {
     const { searchTerm } = this.state;
     const { onFormSubmit } = this.props;
     onFormSubmit(searchTerm);
-    event.preventDefault();
   };
 
   onKeyPress = event => {
@@ -30,8 +29,7 @@ class SearchBar extends Component {
           width: "700px",
           height: "15px",
           position: "relative",
-          left: "20%",
-          top: "10%"
+          left: "20%"
         }}
       >
         <form onSubmit={this.handleSubmit}>
