@@ -24,15 +24,15 @@ class SearchBar extends Component {
     return (
       <Paper
         elevation={6}
-        // style={{
-        //   padding: "25px",
-        //   backgroundColor: "#292826",
-        //   width: "700px",
-        //   height: "15px",
-        //   position: "relative",
-        //   left: "20%",
-        //   top: "10%"
-        // }}
+        style={{
+          padding: "25px",
+          backgroundColor: "#292826",
+          width: "700px",
+          height: "15px",
+          position: "relative",
+          left: "20%",
+          top: "10%"
+        }}
       >
         <form onSubmit={this.handleSubmit}>
           <TextField

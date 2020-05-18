@@ -37,11 +37,19 @@ class App extends Component {
   render() {
     const { selectedVideo, videos } = this.state;
     return (
-      <Grid justify="center" container spacing={10}>
+      <Grid
+        justify="center"
+        container
+        spacing={10}
+        style={{ backgroundColor: "black" }}
+      >
         <Grid item xs={12}>
           <Grid container spacing={10}>
             <Grid item xs={12}>
-              <SearchBar onFormSubmit={this.handleSubmit} />
+              <SearchBar
+                onFormSubmit={this.handleSubmit}
+                style={{ background: "#1b1c1b" }}
+              />
             </Grid>
             <Grid item xs={8}>
               <VideoDetail video={selectedVideo} />
