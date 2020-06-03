@@ -2,11 +2,73 @@
   font-family: sans-serif;
   text-align: center;
 }
-
+body {
+  background-color: rgb(24, 18, 18);
+}
 h1 {
-  color: lightseagreen;
-  font-size: 70px;
+  color: white;
+  text-align: center;
   font-weight: 600;
-  position: relative;
-  top: 10%;
+}
+.videodetails {
+  margin: 5%;
+  color: white;
+  background: black;
+  padding: 5%;
+}
+.videolist {
+  margin: 2%;
+  padding: 5%;
+}
+img {
+  width: 100%;
+}
+.item {
+  padding: 5%;
+  font-size: 30px;
+}
+.videoitem {
+  margin: 5%;
+  background: black;
+  padding: 5%;
+  color: white;
+}
+input[type="text"] {
+  padding: 6px;
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 50%;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px;
+}
+
+button {
+  margin-top: 3%;
+  width: 20%;
+  padding: 6px 10px;
+  background: rgb(141, 50, 50);
+  font-size: 17px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+button:hover {
+  background: white;
+  color: rgb(141, 50, 50);
+}
+
+@media screen and (max-width: 600px) {
+  input[type="text"] {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  input[type="text"] {
+    border: 1px solid white;
+  }
 }

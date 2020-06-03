@@ -21,26 +21,14 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <Paper
-        elevation={6}
-        style={{
-          padding: "25px",
-          backgroundColor: "#292826",
-          width: "700px",
-          height: "15px",
-          position: "relative",
-          left: "20%"
-        }}
-      >
-        <form onSubmit={this.handleSubmit}>
-          <TextField
-            fullWidth
-            label="Search..."
-            onChange={this.handleChange}
-            onKeyPress={this.onKeyPress}
-          />
-        </form>
-      </Paper>
+      <form onSubmit={this.handleSubmit}>
+        <TextField
+          fullWidth
+          label="Search..."
+          onChange={this.handleChange}
+          onKeyPress={this.onKeyPress}
+        />
+      </form>
     );
   }
 }
